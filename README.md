@@ -1,5 +1,5 @@
 # spine
-Read Spine file other forder
+Read Spine file other folder
 
 EX)
 SkeletonAnimation * skUnit_Upgrade = SkeletonAnimation::createWithFile_Not_Assets(fileName_json->getCString(), fileName_atlas->getCString(), true, 1.0f);
