@@ -44,28 +44,13 @@ void _spAtlasPage_createTexture (spAtlasPage* self, const char* path) {
 
 void _spAtlasPage_createTexture_Not_Assets (spAtlasPage* self, const char* path) {
     
-//    std::string _path = CCFileUtils::sharedFileUtils()->getWritablePath();
-//    _path.append(path);
-    
     printf("_spAtlasPage_createTexture_Not_Assets : %s\n", path);
     
-//    CCTexture2D *texture = new CCTexture2D();
-//    unsigned long size;
-//    unsigned char* data = CCFileUtils::sharedFileUtils()->getFileData(_path.c_str(), "rb", &size);
-//    CCImage *img = new CCImage();
-//    img->initWithImageData(data, size);
-//    texture->initWithImage(img);
-//    texture->retain();
-//    self->rendererObject = texture;
-//    self->width = texture->getPixelsWide();
-//    self->height = texture->getPixelsHigh();
-
     CCTexture2D* texture = CCTextureCache::sharedTextureCache()->addImage_Not_Asset(path);
     texture->retain();
     self->rendererObject = texture;
     self->width = texture->getPixelsWide();
     self->height = texture->getPixelsHigh();
-//    texture->release();
 }
 
 void _spAtlasPage_createTexture_Not_Assets_Zip (spAtlasPage* self, const char* zip_path, const char* path) {
