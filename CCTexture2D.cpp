@@ -1,4 +1,5 @@
 // ./cocos2dx/textures/CCTexture2D.cpp -> import
+// ./cocos2dx/textures/CCTexture2D.h CCTexture2D * addImage_Not_Asset(const char * path); - >import 
 
 CCTexture2D * CCTextureCache::addImage_Not_Asset(const char * path)
 {
